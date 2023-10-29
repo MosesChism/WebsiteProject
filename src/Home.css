@@ -1,0 +1,27 @@
+/* Home.css */
+.background-image {
+    /* Set your background image URL */
+    background-image: url('./Hotel.jpg');
+    /* Set background properties to cover the entire container */
+    background-size: cover;
+    background-position: center;
+    /* Set the height of the background image */
+    height: 400px; /* Adjust the height as needed */
+   
+    /* You can also add overlay styles if you want */
+    /* Example overlay with 50% opacity */
+    background-color: rgba(0, 0, 0, 0.5);
+    
+    
+  }
+  
+  /* Style for the content inside the homepage */
+  .content {
+    /* Add padding, text color, or other styles for your content */
+    padding: 20px;
+    color: white;
+    text-align: center;
+  }
+
+
+  

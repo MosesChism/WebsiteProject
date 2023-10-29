@@ -1,38 +1,30 @@
+/* App.css (or any other CSS file where you want to define the styles) */
+body, html {
+  height: 100%;
+  margin: 0;
+  background-color: black!important;  /* Set the background color of the body */
+  color: white; /* Set text color to white */
+}
+
+/* App class styles */
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 100%;
+  text-align: center;
+  background-color: gray; /* Set the background color for the content area */
 }
 
-.App-link {
-  color: #61dafb;
+/* Border styles */
+body {
+  /* Set border properties for left and right sides */
+  border-left: 30px solid orange; /* Set your desired border color and width */
+  border-right: 30px solid orange; /* Set your desired border color and width */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Container styles */
+.container {
+  max-width: 100vw; /* Set your desired maximum width for content */
+  height: 50px;
+  margin: 0 auto; /* Center the content within the borders */
 }

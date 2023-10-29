@@ -1,24 +1,78 @@
-import logo from './logo.svg';
+import React from 'react';
+import { BrowserRouter, Route, Routes, Link } from 'react-router-dom';
+import Home from './Home';
+import Contactus from './Contactus';
+import Reservation from './Reservation';
+import Guess from './Guess';
+import Cn from './Cn';
+import AboutUs from './AboutUs';
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
+import NavItem from 'react-bootstrap/esm/NavItem';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
+import './Home.css';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    
+    <BrowserRouter>
+     <div className="App">
+      <Navbar  expand="lg">
+        <Container  >
+          <Navbar.Brand href="/">Hotel ManagementP</Navbar.Brand>
+
+          
+<Navbar.Toggle
+ 
+aria-controls="basic-navbar-nav" />
+
+          
+<Navbar.Collapse
+ 
+id="basic-navbar-nav">
+
+            
+<Nav
+ 
+className="me-auto">
+
+              
+<NavItem>
+
+
+              </NavItem>
+              <NavItem>
+                <NavDropdown title="Dropdown" id="basic-nav-dropdown">
+                 <Link to="/Cn"> CheckIn/CheckOut</Link>
+                 <br/>
+                  <Link to="/Reservation">Reservations</Link>
+                  <br/>
+                  <Link to="/Guess">Guess Services</Link>
+                  <NavDropdown.Divider />
+                  <NavDropdown.Item to="/AboutUs">About Us</NavDropdown.Item>
+                </NavDropdown>
+              </NavItem>
+            </Nav>
+          </Navbar.Collapse>
+        </Container  >
+<Link to="/ContactUs">Contact Us</Link>
+      </Navbar>
+
+      <Routes>
+        <Route path="/" element={<Home/>}/>
+        <Route to="/Contactus" element={<Contactus/>}/>
+        <Route path="/Cn" element={<Cn/>}/>
+        <Route path="/Guess"element={<Guess/>}/>
+        <Route path="/Reservation"element={<Reservation/>}/>
+        <Route path="/AboutUs"element={<AboutUs/>}/>
+      </Routes>
+      </div>
+    </BrowserRouter>
+
   );
 }
 
