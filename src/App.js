@@ -23,7 +23,7 @@ function App() {
      <div className="App">
       <Navbar  expand="lg">
         <Container  >
-          <Navbar.Brand href="/">Hotel ManagementP</Navbar.Brand>
+          <Navbar.Brand href="/">Hotel Management</Navbar.Brand>
 
           
 <Navbar.Toggle
