@@ -28,3 +28,33 @@ body {
   height: 50px;
   margin: 0 auto; /* Center the content within the borders */
 }
+
+
+
+.reservation-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.reservation-container label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.reservation-container input {
+  width: 200px;
+  padding: 5px;
+  border: 1px #ccc;
+  border-radius: 4px;
+}
+
+.reservation-container button {
+  padding: 10px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}

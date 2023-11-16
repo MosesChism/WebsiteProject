@@ -27,10 +27,6 @@ const Home = () => {
         <br></br>
         <br></br>
         <h2>Our Staff</h2>
-        <p> Innocent Junior Opara</p>
-        <p> Gbenro Charles Opeke</p>
-        <p> Ozoemena Anyaegbu</p>
-        <p> Toochukwu Juliet Mgbole</p>
         <p> Muhammad Ghazi</p>
         <p> Moses Chism III</p>
       </div>

@@ -51,7 +51,7 @@ className="me-auto">
                  <br/>
                   <Link to="/Reservation">Reservations</Link>
                   <br/>
-                  <Link to="/Guess">Guess Services</Link>
+                  <Link to="/Guess">Guest Services</Link>
                   <NavDropdown.Divider />
                   <NavDropdown.Item to="/AboutUs">About Us</NavDropdown.Item>
                 </NavDropdown>
