@@ -1,7 +1,8 @@
 import React, { useState } from
 'react';
-import { Link, Route } from "react-router-dom";
-import CreateAccount from './CreateAccount';
+import {Link} from "react-router-dom";
+
+
 
 
 
@@ -63,10 +64,8 @@ onClick={handleLogin}>Login</button>
         <p>If you dont have an account</p>
         <p>Create your right here:</p>
 
-        
-        <Link to="/CreateAccount">Create your Account?</Link>
-        
-       
+      <Link to="/CA">Create Account</Link>
+     
 
     </div>
   );
