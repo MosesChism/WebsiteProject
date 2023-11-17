@@ -1,7 +1,11 @@
 import React, { useState } from
 'react';
+import { Link, Route } from "react-router-dom";
+import CreateAccount from './CreateAccount';
 
-const Contactus = () => {
+
+
+const Login= () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
@@ -9,7 +13,7 @@ const Contactus = () => {
   const handleLogin = () => {
     if (username === 'admin' && password === 'password') {
       // Successful login
-      console.log('Successfully logged in');
+      alert('Successfully logged in');
       // Redirect to protected page or perform other actions
     } else {
       setErrorMessage('Invalid username or password');
@@ -51,8 +55,21 @@ onChange={(event) => setPassword(event.target.value)}
  
 onClick={handleLogin}>Login</button>
       {errorMessage && <p className="error-message">{errorMessage}</p>}
+
+
+
+
+      
+        <p>If you dont have an account</p>
+        <p>Create your right here:</p>
+
+        
+        <Link to="/CreateAccount">Create your Account?</Link>
+        
+       
+
     </div>
   );
 };
 
-export default Contactus;
+export default Login;

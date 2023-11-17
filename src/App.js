@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes, Link } from 'react-router-dom';
 import Home from './Home';
-import Contactus from './Contactus';
+import Login from './Login';
 import Reservation from './Reservation';
 import Guess from './Guess';
 import Cn from './Cn';
@@ -59,12 +59,12 @@ className="me-auto">
             </Nav>
           </Navbar.Collapse>
         </Container  >
-<Link to="/ContactUs">Contact Us</Link>
+<Link to="/Login">Login</Link>
       </Navbar>
 
       <Routes>
         <Route path="/" element={<Home/>}/>
-        <Route to="/Contactus" element={<Contactus/>}/>
+        <Route path="/Login" element={<Login/>}/>
         <Route path="/Cn" element={<Cn/>}/>
         <Route path="/Guess"element={<Guess/>}/>
         <Route path="/Reservation"element={<Reservation/>}/>
